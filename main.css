@@ -62,8 +62,15 @@ img {
     margin: 1rem 0;
 }
 
+.concert-subtitle {
+    font-size: 1.2rem;
+    color: #fff5;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.4rem;
+    margin: 1rem 0;
+}
+
 .externallink-icon {
     color: rgba(255, 255, 255, .5);;
     font-size: 0.75rem;
-    margin-top: 0.25rem;
 }
