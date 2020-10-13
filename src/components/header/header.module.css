@@ -1,0 +1,36 @@
+.navlink {
+    color: gray;
+    font-size: 1.2rem;
+}
+
+.navlink:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.navlink-active, .navlink-active:hover {
+    border-bottom: 0.3rem solid white;
+    color: white;
+}
+
+.facebook-icon,
+.instagram-icon {
+    color: rgba(255, 255, 255, .5);;
+    font-size: 1.2rem;
+    padding: .5rem;
+}
+
+.facebook-icon:hover,
+.instagram-icon:hover {
+    color: white;
+}
+
+.title {
+	color: white;
+	margin: 1rem;
+}
+
+.portrait {
+    margin: 2rem;
+    width: 18rem;
+}
