@@ -1,0 +1,17 @@
+.title {
+    font-size: 1.5rem;
+    color: white;
+    margin: 1rem 0;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #fff5;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.4rem;
+    margin: 1rem 0;
+}
+
+.text {
+	margin-bottom: 1.5rem;
+}
