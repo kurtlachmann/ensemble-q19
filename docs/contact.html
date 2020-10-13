@@ -3,7 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Single Page Apps for GitHub Pages</title>
-    <script type="text/javascript">
+	<script type="text/javascript">
+	  // For some reason GitHub Pages doesn't redirect to our custom 404.html when requesting the
+	  // /contact subpage. Instead it's showing the default GitHub 404 page. This prevents us from
+	  // utilizing the "Single Page Apps for GitHub Pages" hack/workaround. For all other pages it
+	  // works (e.g. /media) except for /contact and /404.html.
+	  // To fix this we place this contact.html file here that does exactly the same as our real
+	  // 404 page.
+
       // Single Page Apps for GitHub Pages
       // MIT License
       // https://github.com/rafgraph/spa-github-pages

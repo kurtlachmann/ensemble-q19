@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Deployment
+Run `npm run deploy`. This will update the files in the `docs` directory. Push those changes
+to the master branch to deploy them. Everything in the `docs` directory is served from the root
+of our domain.
+
 ## Available Scripts
 
 In the project directory, you can run:
