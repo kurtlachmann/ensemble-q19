@@ -43,10 +43,14 @@ class Concert extends React.Component {
 			)
 			image_below = (
 				<Col className="d-block d-lg-none">
-					<img className="rounded-lg" src={this.props.data.image} width="100%" height="200rem" style={{objectFit: "cover"}} alt=""></img>
+					<img className="rounded-lg" src={this.props.data.image} width="100%" height="100%" style={{objectFit: "cover"}} alt=""></img>
 				</Col>
 			)
 		}
+
+		let concert_text = this.props.data.text.map((data, index) => {
+			return <p key={index}>{data}</p>
+		});
 
 		return (
 			<Container className="mb-5">
@@ -55,7 +59,9 @@ class Concert extends React.Component {
 					<Col>
 						<div className={style.title}>{this.props.data.title}</div>
 						<div className={style.subtitle}>{this.props.data.subtitle}</div>
-						<div className={style.text}>{this.props.data.text}</div>
+						<div className={style.text}>
+							{concert_text}
+						</div>
 
 						<Container className="d-flex">
 							<div className="mx-3">
