@@ -8,22 +8,22 @@ const songs = [
 	{
 		"title": "Ubi Caritas",
 		"composer": "Gjeilo",
-		"url": "https://docs.google.com/uc?export=download&id=1qIQUNulwTXBqbT2OXOETkfrDAxYPbQcO"
+		"url": "https://docs.google.com/uc?export=download&id=1eUcIUP5qqIFSSFrverAHvCX9sYch1kJJ"
 	},
 	{
 		"title": "Erquicke mich mit deinem Licht",
 		"composer": "Becker",
-		"url": "https://drive.google.com/uc?export=download&id=1HS86Dq1HleuN8nwOPZOVnbba5YRqFCJJ"
+		"url": "https://drive.google.com/uc?export=download&id=1l6CBAn0wHMzdmLyEhtKKgvBS3Q8Appxv"
 	},
 	{
 		"title": "Salvum Fac Regem",
 		"composer": "Hauptmann",
-		"url": "https://drive.google.com/uc?export=download&id=1jw5Ae7o2GyfMjoJMxEE3Cce8TEAABsHy"
+		"url": "https://drive.google.com/uc?export=download&id=1Q_-apn32-7BMiOhjDAFUf0zXV4AlHauQ"
 	},
 	{
 		"title": "Nice work if you can get it",
 		"composer": "Gershwin",
-		"url": "https://drive.google.com/uc?export=download&id=1C3g6qMBYYRwrcBiiBwUqJyn-BZG_iD5f"
+		"url": "https://drive.google.com/uc?export=download&id=1K8ZLXEwhHuFi5Hwx7oPLBm8ufUF69anM"
 	}
 ]
 
