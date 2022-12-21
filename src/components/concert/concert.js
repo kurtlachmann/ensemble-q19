@@ -52,6 +52,11 @@ class Concert extends React.Component {
 			return <p key={index}>{data}</p>
 		});
 
+		let dateTime = formatDate(this.props.data.date);
+		if (this.props.data.time) {
+			dateTime += `, ${this.props.data.time} Uhr`
+		}
+
 		return (
 			<Container className="mb-5">
 				<Row>
@@ -74,7 +79,7 @@ class Concert extends React.Component {
 							<div className="mx-3">
 								<FontAwesomeIcon icon={faClock} />
 							</div>
-							<p>{formatDate(this.props.data.date)}, {this.props.data.time} Uhr</p>
+							<p>{dateTime}</p>
 						</Container>
 					</Col>
 					{image_side}
