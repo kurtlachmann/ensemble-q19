@@ -1,9 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Deployment
-Run `npm run deploy`. This will update the files in the `docs` directory. Push those changes
-to the master branch to deploy them. Everything in the `docs` directory is served from the root
-of our domain.
+To deploy the website run `npm run deploy`. This will build the site to the `build` directory and
+push it to the `gh-pages` branch. This branch serves as the source for GitHub Pages.
 
 ## Available Scripts
 
