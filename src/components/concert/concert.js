@@ -1,98 +1,130 @@
-import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import style from './concert.module.css';
+import styled from "@emotion/styled";
+import { faClock, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
-import { faClock } from "@fortawesome/free-solid-svg-icons";
+import React from "react";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 
 function getDay(dateString) {
-	const date = new Date(dateString);
-	switch (date.getDay()) {
-		case 0: return "Sonntag";
-		case 1: return "Montag";
-		case 2: return "Dienstag";
-		case 3: return "Mittwoch";
-		case 4: return "Donnerstag";
-		case 5: return "Freitag";
-		case 6: return "Samstag";
-	}
+  const date = new Date(dateString);
+  switch (date.getDay()) {
+    case 0:
+      return "Sonntag";
+    case 1:
+      return "Montag";
+    case 2:
+      return "Dienstag";
+    case 3:
+      return "Mittwoch";
+    case 4:
+      return "Donnerstag";
+    case 5:
+      return "Freitag";
+    case 6:
+      return "Samstag";
+		default:
+			return "";  // This should never happen
+  }
 }
 
 function formatDate(dateString) {
-	let year, month, day;
-	[year, month, day] = dateString.split('-');
-	return `${getDay(dateString)}, ${day}.${month}.${year}`
+  let year, month, day;
+  [year, month, day] = dateString.split("-");
+  return `${getDay(dateString)}, ${day}.${month}.${year}`;
 }
 
-class Concert extends React.Component {
+const Title = styled.div`
+	font-size: 1.5rem;
+	color: white;
+	margin: 1rem 0;
+`;
 
-	render() {
-		// An empty column that disappears on small screens
-		const spacerCol = <Col className="col-1 d-none d-md-block"></Col>
+const Subtitle = styled.div`
+	font-size: 1.2rem;
+	color: #fff5;
+	text-transform: uppercase;
+	margin: 1rem 0;
+`;
 
-		// Create the image containers only if this concert has an image assigned
-		let image_side = null;
-		let image_below = null;
-		if (this.props.data.image) {
-			image_side = (
-				<Col className="col-4 d-none d-lg-block">
-					<img className="rounded-lg" src={this.props.data.image} width="100%" alt=""></img>
-				</Col>
-			)
-			image_below = (
-				<Col className="d-block d-lg-none">
-					<img className="rounded-lg" src={this.props.data.image} width="100%" height="100%" style={{objectFit: "cover"}} alt=""></img>
-				</Col>
-			)
-		}
+const Text = styled.div`
+	margin-bottom: 1.5rem;
+`;
 
-		let concert_text = this.props.data.text.map((data, index) => {
-			return <p key={index}>{data}</p>
-		});
+function Concert(props) {
+  // An empty column that disappears on small screens
+  const spacerCol = <Col className="col-1 d-none d-md-block"></Col>;
 
-		let dateTime = formatDate(this.props.data.date);
-		if (this.props.data.time) {
-			dateTime += `, ${this.props.data.time} Uhr`
-		}
+  // Create the image containers only if this concert has an image assigned
+  let image_side = null;
+  let image_below = null;
+  if (props.data.image) {
+    image_side = (
+      <Col className="col-4 d-none d-lg-block">
+        <img
+          className="rounded-lg"
+          src={props.data.image}
+          width="100%"
+          alt=""
+        ></img>
+      </Col>
+    );
+    image_below = (
+      <Col className="d-block d-lg-none">
+        <img
+          className="rounded-lg"
+          src={props.data.image}
+          width="100%"
+          height="100%"
+          style={{ objectFit: "cover" }}
+          alt=""
+        ></img>
+      </Col>
+    );
+  }
 
-		return (
-			<Container className="mb-5">
-				<Row>
-					{spacerCol}
-					<Col>
-						<div className={style.title}>{this.props.data.title}</div>
-						<div className={style.subtitle}>{this.props.data.subtitle}</div>
-						<div className={style.text}>
-							{concert_text}
-						</div>
+  let concert_text = props.data.text.map((data, index) => {
+    return <p key={index}>{data}</p>;
+  });
 
-						<Container className="d-flex">
-							<div className="mx-3">
-								<FontAwesomeIcon icon={faMapMarkerAlt} />
-							</div>
-							<p>{this.props.data.location}</p>
-						</Container>
+  let dateTime = formatDate(props.data.date);
+  if (props.data.time) {
+    dateTime += `, ${props.data.time} Uhr`;
+  }
 
-						<Container className="d-flex">
-							<div className="mx-3">
-								<FontAwesomeIcon icon={faClock} />
-							</div>
-							<p>{dateTime}</p>
-						</Container>
-					</Col>
-					{image_side}
-					{spacerCol}
-				</Row>
-				<Row>
-					{spacerCol}
-					{image_below}
-					{spacerCol}
-				</Row>
-			</Container>
-		);
-	}
+  return (
+    <Container className="mb-5">
+      <Row>
+        {spacerCol}
+        <Col>
+          <Title>{props.data.title}</Title>
+          <Subtitle>{props.data.subtitle}</Subtitle>
+          <Text>{concert_text}</Text>
+
+          <Container className="d-flex">
+            <div className="mx-3">
+              <FontAwesomeIcon icon={faMapMarkerAlt} />
+            </div>
+            <p>{props.data.location}</p>
+          </Container>
+
+          <Container className="d-flex">
+            <div className="mx-3">
+              <FontAwesomeIcon icon={faClock} />
+            </div>
+            <p>{dateTime}</p>
+          </Container>
+        </Col>
+        {image_side}
+        {spacerCol}
+      </Row>
+      <Row>
+        {spacerCol}
+        {image_below}
+        {spacerCol}
+      </Row>
+    </Container>
+  );
 }
 
-export default Concert
+export default Concert;
