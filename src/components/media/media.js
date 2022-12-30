@@ -6,6 +6,11 @@ import Col from 'react-bootstrap/Col';
 
 const songs = [
 	{
+		"title": "Jubilate Deo",
+		"composer": "Schütz",
+		"url": "https://drive.google.com/uc?export=download&id=1_KyPVrw57aklG0-S9jFg3owrhEa3e0_h"
+	},
+	{
 		"title": "Ubi Caritas",
 		"composer": "Gjeilo",
 		"url": "https://docs.google.com/uc?export=download&id=1eUcIUP5qqIFSSFrverAHvCX9sYch1kJJ"
@@ -30,6 +35,8 @@ const songs = [
 const images = [
 	"/img/emmauskirche-01.jpg",
 	"/img/emmauskirche-02.jpg",
+	"/img/dormi-bene.jpg",
+	"/img/dormi-bene-Himmel-1920x1200.jpg",
 ]
 
 
