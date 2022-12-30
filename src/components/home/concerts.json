@@ -1,11 +1,74 @@
 [
-	{
-		"title": "Konzert Bennungen",
-		"date": "2023-06-25",
-		"time": "",
-		"location": "Kirche St. Johannes, Bennungen",
-		"subtitle": "",
-		"text": [""],
-		"image": "img/bennungen.jpg"
-	}
+  {
+    "title": "Konzert Bennungen",
+    "date": "2023-06-25",
+    "time": "",
+    "location": "Kirche St. Johannes, Bennungen",
+    "subtitle": "",
+    "text": [""],
+    "image": "img/bennungen.jpg"
+  },
+  {
+    "title": "Dormi bene",
+    "date": "2022-11-20",
+    "time": "18:00",
+    "location": "Clara-Zetkin-Park, Leipzig",
+    "subtitle": "A-Capella Wandelkonzert",
+    "text": [
+      "Wir wandeln von der Sachsenbrücke Leipzig durch uralte und zeitgenössische Klanglandschaften. Es erklingen Abend- , Schlaf und Nachtlieder von Bennett bis Gjeilo in den dunklen November-Abend hinein. Wir trotzen dem Dunkel: Wandern, singen und bringen Sie Lampions, Laternen und Lichter mit, 18 Uhr starten wir auf der Sachsenbrücke Leipzig."
+    ],
+    "image": ""
+  },
+  {
+    "title": "Jauchzet dem Herren, alle Welt",
+    "date": "2022-05-07",
+    "time": "19:30",
+    "location": "Annenkirche Dresden",
+    "subtitle": "Ein Konzert der Hochschule für Kirchenmusik",
+    "text": [
+	  "Werke von Heinrich Schütz und Uraufführungen von Matthias Drude und Franz Kaern-Biederstedt",
+      "Chor der Hochschule für Kirchenmusik Dresden",
+      "Ensemble Q19",
+      "Instrumenta Musica",
+      "Stephan Lennig, Leitung",
+      "Mit groß besetzten, klangprächtigen Psamvertonungen aus Schütz' Psalmen Davids, einer Auswahl aus der Geistlichen Chormusik und den Kleinen Geistlichen Konzerten II erklingt an diesem Abend ein Programm, in dem Jubel und Hoffnung der Osterzeit nachklingen. Es sind Werke von großer Kraft und tiefer persönlicher Empfindung, die immer wieder faszinierende Entdeckungen bereithalten. In der Begegnung mit zeitgenössischer Musik erweist sich einmal mehr die Aktualitöt und überzeitliche Gültigkeit von Schütz' Musik: Seine Motette \"Ich bin ein rechter Weinstock\" SWV 389 inspirierte Michael Drude zur Komposition seiner Motette \"Herzweide\", in der frühbarocke Vokalpolyphonie eine Symbiose mit Elementen der Romantik und der klassischen Moderne eingeht. Franz Kaern-Biederstedt stellt sein Werk \"Auferstehung\" für gemischten Chor und historische Instrumente in unmittelbare Beziehung zu Schütz' Motette \"Christ ist erstanden\" SWV 470."
+    ],
+    "image": ""
+  },
+  {
+	"title": "Vesper Kreuzkirche",
+	"date": "2021-10-16",
+	"time": "17:00",
+	"location": "Kreuzkirche Dresden",
+	"subtitle": "",
+	"text": ["Es erklingen Werke von Monteverdi und Schütz, bis hin zu Libby Larsen und Alphons Diepenbrock.", "KMD i. R. Christian Thiele, Orgel", "Pfarrer Holger Molkau, Liturgie"],
+	"image": "img/dresden-kreuzkirche-01.jpg"
+  },
+  {
+    "title": "Konzert Technitz",
+    "date": "2021-05-30",
+    "time": "",
+    "location": "Kirche Technitz",
+    "subtitle": "",
+    "text": [""],
+    "image": ""
+  },
+  {
+    "title": "Vesper Kreuzkirche",
+    "date": "2021-05-15",
+    "time": "",
+    "location": "Kreuzkirche, Dresden",
+    "subtitle": "",
+    "text": [""],
+    "image": ""
+  },
+  {
+    "title": "\"Erfrischung\" - a capella Musik zum Abend",
+    "date": "2020-06-28",
+    "time": "17:00",
+    "location": "Emmauskirche, Leipzig",
+    "subtitle": "Musikalische Andacht",
+    "text": ["Der Frühling bringt Erfrischung mit sich: Wärme, Blüten, Licht, Lebendigkeit. Darüber lohnt es sich, zu singen und die Schönheit der Erde zu preisen! Am 28. Juni 2020 um 17 Uhr gibt das junge Ensemble Q19 aus Dresden ein Konzert in der Emmauskirche zu Leipzig. Es erklingt geistliche und weltliche a cappella Musik mit Werken von Schütz bis Gjeilo – ein bunte Klangvielfalt, dem Frühling (und dem Sommer!) gleich."],
+    "image": ""
+  }
 ]

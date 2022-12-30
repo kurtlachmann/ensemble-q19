@@ -7,8 +7,7 @@
 .subtitle {
     font-size: 1.2rem;
     color: #fff5;
-    letter-spacing: 0.05rem;
-    word-spacing: 0.4rem;
+    text-transform: uppercase;
     margin: 1rem 0;
 }
 
