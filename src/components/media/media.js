@@ -8,27 +8,27 @@ const songs = [
 	{
 		"title": "Jubilate Deo",
 		"composer": "Schütz",
-		"url": "https://drive.google.com/uc?export=download&id=1_KyPVrw57aklG0-S9jFg3owrhEa3e0_h"
+		"url": "/audio/jubilate_deo.mp3"
 	},
 	{
 		"title": "Ubi Caritas",
 		"composer": "Gjeilo",
-		"url": "https://docs.google.com/uc?export=download&id=1eUcIUP5qqIFSSFrverAHvCX9sYch1kJJ"
+		"url": "/audio/ubi_caritas.mp3"
 	},
 	{
 		"title": "Erquicke mich mit deinem Licht",
 		"composer": "Becker",
-		"url": "https://drive.google.com/uc?export=download&id=1l6CBAn0wHMzdmLyEhtKKgvBS3Q8Appxv"
+		"url": "/audio/erquicke_mich.mp3"
 	},
 	{
 		"title": "Salvum Fac Regem",
 		"composer": "Hauptmann",
-		"url": "https://drive.google.com/uc?export=download&id=1Q_-apn32-7BMiOhjDAFUf0zXV4AlHauQ"
+		"url": "/audio/salvum_fac_regem.mp3"
 	},
 	{
 		"title": "Nice work if you can get it",
 		"composer": "Gershwin",
-		"url": "https://drive.google.com/uc?export=download&id=1K8ZLXEwhHuFi5Hwx7oPLBm8ufUF69anM"
+		"url": "/audio/nice_work.mp3"
 	}
 ]
 
